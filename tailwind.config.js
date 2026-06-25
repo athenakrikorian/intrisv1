@@ -6,6 +6,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Cormorant Garamond', 'serif'],
+      },
+      colors: {
+        foreground: '#000000',
+      },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-out forwards',
         'spin-slow': 'spin-slow 8s linear infinite',

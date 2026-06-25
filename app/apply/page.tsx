@@ -2,8 +2,8 @@
 import { useState } from 'react'
 
 const inputClass =
-  'w-full bg-white/60 border border-white/50 rounded-xl px-4 py-3 text-[#2A2A2A] text-sm placeholder:text-[#2A2A2A]/40 focus:outline-none focus:ring-2 focus:ring-[#C5CBFA] focus:border-transparent transition'
-const labelClass = 'block text-xs tracking-widest uppercase text-[#2A2A2A]/70 mb-2'
+  'w-full bg-white/60 border border-white/50 rounded-xl px-4 py-3 text-[#000000] text-sm placeholder:text-[#000000]/40 focus:outline-none focus:ring-2 focus:ring-[#C5CBFA] focus:border-transparent transition'
+const labelClass = 'block text-xs tracking-widest uppercase text-[#000000]/70 mb-2'
 
 export default function Apply() {
   const [submitted, setSubmitted] = useState(false)
@@ -38,11 +38,11 @@ export default function Apply() {
       <div className="max-w-2xl mx-auto animate-fade-in">
         {/* Top section */}
         <div className="mb-10">
-          <h1 className="text-3xl font-light tracking-widest text-[#0A0A0A] mb-6">Apply</h1>
-          <p className="text-[#2A2A2A] text-base leading-relaxed mb-4">
+          <h1 className="text-3xl font-light tracking-widest text-[#000000] mb-6">Apply</h1>
+          <p className="text-[#000000] text-base leading-relaxed mb-4">
             Applications are reviewed on a rolling basis. The deadline is August 31st. All decisions are sent by September 4th.
           </p>
-          <p className="text-[#2A2A2A] text-base leading-relaxed">
+          <p className="text-[#000000] text-base leading-relaxed">
             We accept video applications only, recorded on Loom.
           </p>
         </div>
@@ -51,7 +51,7 @@ export default function Apply() {
         <div className="bg-white/50 backdrop-blur-md rounded-3xl border border-white/40 p-8 md:p-12">
           {submitted ? (
             <div className="flex flex-col items-center justify-center py-16 text-center">
-              <p className="text-[#0A0A0A] text-xl font-light tracking-wide leading-relaxed">
+              <p className="text-[#000000] text-xl font-light tracking-wide leading-relaxed">
                 We&apos;ll be in touch within 7 days.<br />Keep building.
               </p>
             </div>
@@ -180,7 +180,7 @@ export default function Apply() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full sm:w-auto bg-[#0A0A0A] text-white/90 px-10 py-3.5 rounded-full text-xs tracking-widest uppercase hover:bg-[#2A2A2A] transition-colors disabled:opacity-50"
+                className="w-full sm:w-auto bg-[#000000] text-white/90 px-10 py-3.5 rounded-full text-xs tracking-widest uppercase hover:bg-[#000000] transition-colors disabled:opacity-50"
               >
                 {loading ? 'Submitting...' : 'Submit Application'}
               </button>

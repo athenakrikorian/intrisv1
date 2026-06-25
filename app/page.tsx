@@ -5,12 +5,12 @@ export default function Home() {
     <main className="min-h-[calc(100vh-4rem)] flex flex-col">
       {/* Hero */}
       <div className="flex-1 flex flex-col items-center justify-center text-center px-6 animate-fade-in">
-        <h1 className="text-[7rem] sm:text-[10rem] md:text-[13rem] font-extralight tracking-[0.05em] text-[#0A0A0A] leading-none mb-12">
+        <h1 className="text-[7rem] sm:text-[10rem] md:text-[13rem] font-extralight tracking-[0.05em] text-[#000000] leading-none mb-12">
           Intris
         </h1>
         <Link
           href="/apply"
-          className="bg-[#0A0A0A] text-white/90 px-10 py-3.5 rounded-full text-xs tracking-widest uppercase hover:bg-[#2A2A2A] transition-colors"
+          className="bg-[#000000] text-white/90 px-10 py-3.5 rounded-full text-xs tracking-widest uppercase hover:bg-[#000000] transition-colors"
         >
           Apply Now
         </Link>
@@ -18,7 +18,7 @@ export default function Home() {
 
       {/* Backed By */}
       <div className="pb-16 pt-8 px-6 text-center">
-        <p className="text-xs tracking-widest uppercase text-[#2A2A2A]/50 mb-6">Backed By</p>
+        <p className="text-xs tracking-widest uppercase text-[#000000]/50 mb-6">Backed By</p>
         <div className="flex flex-wrap justify-center gap-4">
           {[...Array(5)].map((_, i) => (
             <div
