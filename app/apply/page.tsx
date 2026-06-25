@@ -6,32 +6,7 @@ const inputClass =
 const labelClass = 'block text-xs text-[#000000]/70 mb-2'
 
 export default function Apply() {
-  const [submitted, setSubmitted] = useState(false)
   const [teamSize, setTeamSize] = useState('solo')
-  const [loading, setLoading] = useState(false)
-
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault()
-    setLoading(true)
-    const form = e.currentTarget
-    const data = new FormData(form)
-    const body: Record<string, string> = {}
-    data.forEach((value, key) => {
-      body[key] = value.toString()
-    })
-    try {
-      await fetch('https://formspree.io/f/mqevpbrv', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(body),
-      })
-      setSubmitted(true)
-    } catch {
-      setSubmitted(true)
-    } finally {
-      setLoading(false)
-    }
-  }
 
   return (
     <main className="min-h-[calc(100vh-4rem)] py-20 px-6">
@@ -49,14 +24,7 @@ export default function Apply() {
 
         {/* Form card */}
         <div className="bg-white/50 backdrop-blur-md rounded-3xl border border-white/40 p-8 md:p-12">
-          {submitted ? (
-            <div className="flex flex-col items-center justify-center py-16 text-center">
-              <p className="text-[#000000] text-xl font-light leading-relaxed">
-                We&apos;ll be in touch within 7 days.<br />Keep building.
-              </p>
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="space-y-8">
+            <form action="https://formspree.io/f/mqevpbrv" method="POST" className="space-y-8">
               {/* Full Name */}
               <div>
                 <label className={labelClass} htmlFor="fullName">full name</label>
@@ -179,13 +147,11 @@ export default function Apply() {
               {/* Submit */}
               <button
                 type="submit"
-                disabled={loading}
-                className="w-full sm:w-auto bg-[#000000] text-white/90 px-10 py-3.5 rounded-full text-sm hover:opacity-80 transition-opacity disabled:opacity-50"
+                className="w-full sm:w-auto bg-[#000000] text-white/90 px-10 py-3.5 rounded-full text-sm hover:opacity-80 transition-opacity"
               >
-                {loading ? 'submitting...' : 'submit application'}
+                submit application
               </button>
             </form>
-          )}
         </div>
       </div>
     </main>
