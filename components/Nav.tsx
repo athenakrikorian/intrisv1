@@ -5,14 +5,18 @@ import { useState } from 'react'
 export default function Nav() {
   const [open, setOpen] = useState(false)
   const links = [
-    { href: '/', label: 'home' },
     { href: '/program', label: 'program' },
     { href: '/apply', label: 'apply' },
   ]
   return (
     <nav className="sticky top-0 z-50 bg-white/30 backdrop-blur-md border-b border-white/30">
       <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="text-[#000000] font-light tracking-[-0.02em] text-lg">intris</Link>
+        <Link href="/" aria-label="intris home">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="4" y1="28" x2="26" y2="6" stroke="#000000" strokeWidth="2" strokeLinecap="round"/>
+            <polyline points="16,4 26,6 24,16" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+          </svg>
+        </Link>
         {/* Desktop links */}
         <div className="hidden md:flex gap-8">
           {links.map(l => (

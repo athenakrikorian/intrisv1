@@ -11,7 +11,9 @@
       "Bash(ls /usr/local/bin/node*)",
       "Read(//Users/athenakrik/.nvm/**)",
       "Bash(/opt/homebrew/bin/npm run:*)",
-      "Bash(PATH=\"/opt/homebrew/bin:$PATH\" npm run build)"
+      "Bash(PATH=\"/opt/homebrew/bin:$PATH\" npm run build)",
+      "Bash(PATH=\"/opt/homebrew/bin:$PATH\" node -e \":*)",
+      "Bash(sips -z 180 180 /Users/athenakrik/intrisv1/public/apple-touch-icon.png)"
     ]
   }
 }

@@ -8,6 +8,10 @@ const dmSans = DM_Sans({ subsets: ['latin'], weight: ['300'] })
 export const metadata: Metadata = {
   title: 'Intris',
   description: 'Pre-seed incubator at Penn',
+  icons: {
+    icon: '/favicon.svg',
+    apple: '/apple-touch-icon.png',
+  },
 }
 
 export default function RootLayout({
