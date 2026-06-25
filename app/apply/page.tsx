@@ -20,7 +20,7 @@ export default function Apply() {
       body[key] = value.toString()
     })
     try {
-      await fetch('https://formspree.io/info@intris.com', {
+      await fetch('https://formspree.io/f/mqevpbrv', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(body),
