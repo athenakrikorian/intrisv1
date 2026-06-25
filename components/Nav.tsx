@@ -8,7 +8,6 @@ export default function Nav() {
     { href: '/', label: 'Home' },
     { href: '/program', label: 'Program' },
     { href: '/apply', label: 'Apply' },
-    { href: '/about', label: 'About' },
   ]
   return (
     <nav className="sticky top-0 z-50 bg-white/30 backdrop-blur-md border-b border-white/30">
