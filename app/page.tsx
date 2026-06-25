@@ -5,20 +5,20 @@ export default function Home() {
     <main className="min-h-[calc(100vh-4rem)] flex flex-col">
       {/* Hero */}
       <div className="flex-1 flex flex-col items-center justify-center text-center px-6 animate-fade-in">
-        <h1 className="text-[7rem] sm:text-[10rem] md:text-[13rem] font-extralight tracking-[0.05em] text-[#000000] leading-none mb-12">
-          Intris
+        <h1 className="text-[7rem] sm:text-[10rem] md:text-[13rem] font-light tracking-[-0.02em] text-[#000000] leading-none mb-12">
+          intris
         </h1>
         <Link
           href="/apply"
-          className="bg-[#000000] text-white/90 px-10 py-3.5 rounded-full text-xs tracking-widest uppercase hover:bg-[#000000] transition-colors"
+          className="bg-[#000000] text-white/90 px-10 py-3.5 rounded-full text-sm hover:opacity-80 transition-opacity"
         >
-          Apply Now
+          apply now
         </Link>
       </div>
 
       {/* Backed By */}
       <div className="pb-16 pt-8 px-6 text-center">
-        <p className="text-xs tracking-widest uppercase text-[#000000]/50 mb-6">Backed By</p>
+        <p className="text-sm text-[#000000]/50 mb-6">backed by</p>
         <div className="flex flex-wrap justify-center gap-4">
           {[...Array(5)].map((_, i) => (
             <div

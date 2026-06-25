@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
-import { Cormorant_Garamond } from 'next/font/google'
+import { DM_Sans } from 'next/font/google'
 import './globals.css'
 import Nav from '@/components/Nav'
 
-const cormorant = Cormorant_Garamond({ subsets: ['latin'], weight: ['300', '400', '500', '600'] })
+const dmSans = DM_Sans({ subsets: ['latin'], weight: ['300'] })
 
 export const metadata: Metadata = {
   title: 'Intris',
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cormorant.className}>
+      <body className={dmSans.className}>
         <div
           className="min-h-screen gradient-bg"
         >

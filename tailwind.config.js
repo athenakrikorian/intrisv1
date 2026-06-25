@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Cormorant Garamond', 'serif'],
+        sans: ['DM Sans', 'sans-serif'],
       },
       colors: {
         foreground: '#000000',
