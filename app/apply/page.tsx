@@ -121,29 +121,6 @@ export default function Apply() {
                 />
               </div>
 
-              {/* Reference */}
-              <div className="space-y-4">
-                <p className={labelClass}>reference</p>
-                <div>
-                  <label className={labelClass} htmlFor="refName">reference name</label>
-                  <input id="refName" name="refName" type="text" placeholder="full name" className={inputClass} />
-                </div>
-                <div>
-                  <label className={labelClass} htmlFor="refRelationship">relationship</label>
-                  <input id="refRelationship" name="refRelationship" type="text" placeholder="e.g. professor, mentor, colleague" className={inputClass} />
-                </div>
-                <div>
-                  <label className={labelClass} htmlFor="refEmail">reference email</label>
-                  <input id="refEmail" name="refEmail" type="email" placeholder="reference@example.com" className={inputClass} />
-                </div>
-              </div>
-
-              {/* How did you hear */}
-              <div>
-                <label className={labelClass} htmlFor="source">how did you hear about intris (optional)</label>
-                <input id="source" name="source" type="text" placeholder="e.g. friend, instagram, penn newsletter..." className={inputClass} />
-              </div>
-
               {/* Submit */}
               <button
                 type="submit"
