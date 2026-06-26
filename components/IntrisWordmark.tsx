@@ -11,7 +11,7 @@ const ArrowI = () => (
       xmlns="http://www.w3.org/2000/svg"
       style={{
         position: 'absolute',
-        top: '0.07em',
+        top: '0.13em',
         left: '50%',
         transform: 'translateX(-50%)',
         width: '0.15em',
