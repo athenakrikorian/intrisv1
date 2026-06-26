@@ -9,7 +9,7 @@ export default function Nav() {
     { href: '/apply', label: 'apply' },
   ]
   return (
-    <nav className="sticky top-0 z-50 border-b border-black/5">
+    <nav className="sticky top-0 z-50">
       <div className="w-full px-4 h-16 flex items-center justify-between">
         <Link href="/" aria-label="intris home">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
