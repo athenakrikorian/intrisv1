@@ -14,13 +14,13 @@ const ArrowI = () => (
         top: '0.07em',
         left: '50%',
         transform: 'translateX(-50%)',
-        width: '0.2em',
-        height: '0.2em',
+        width: '0.15em',
+        height: '0.15em',
         overflow: 'visible',
       }}
     >
-      <line x1="1" y1="9" x2="9" y2="1" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
-      <polyline points="5,0 9,1 8,5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+      <line x1="1" y1="9" x2="9" y2="1" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
+      <polyline points="5,0 9,1 8,5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   </span>
 )
