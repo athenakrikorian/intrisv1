@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import IntrisWordmark from '@/components/IntrisWordmark'
 
 export default function Home() {
   return (
@@ -6,7 +7,7 @@ export default function Home() {
       {/* Hero */}
       <div className="flex-1 flex flex-col items-center justify-center text-center px-6 animate-fade-in">
         <h1 className="text-[5rem] sm:text-[7rem] md:text-[9rem] font-light tracking-[-0.02em] text-[#000000] leading-none mb-12">
-          intris
+          <IntrisWordmark />
         </h1>
         <Link
           href="/apply"
