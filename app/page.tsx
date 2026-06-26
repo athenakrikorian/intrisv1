@@ -6,15 +6,9 @@ export default function Home() {
     <main className="min-h-[calc(100vh-4rem)] flex flex-col">
       {/* Hero */}
       <div className="flex-1 flex flex-col items-center justify-center text-center px-6 animate-fade-in">
-        <h1 className="text-[5rem] sm:text-[7rem] md:text-[9rem] font-light tracking-[-0.02em] text-[#000000] leading-none mb-12">
+        <h1 className="text-[5rem] sm:text-[7rem] md:text-[9rem] font-light tracking-[-0.02em] text-[#000000] leading-none">
           <IntrisWordmark />
         </h1>
-        <Link
-          href="/apply"
-          className="bg-[#000000] text-white/90 px-10 py-3.5 rounded-full text-sm hover:opacity-80 transition-opacity"
-        >
-          apply now
-        </Link>
       </div>
 
       {/* Backed By */}
