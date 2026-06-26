@@ -28,6 +28,9 @@ export default function Home() {
             />
           ))}
         </div>
+        <a href="mailto:info@intris.com" className="text-sm text-[#000000]/50 hover:text-[#000000] transition-opacity mt-8 inline-block">
+          info@intris.com
+        </a>
       </div>
     </main>
   )
