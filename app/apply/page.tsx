@@ -87,7 +87,7 @@ export default function Apply() {
               {/* Video 1 */}
               <div>
                 <label className={labelClass} htmlFor="video1">
-                  video 1 — &ldquo;what are you building, who is it for, and why are you the person to build it — 2 minutes max&rdquo;
+                  video 1: what are you building, who is it for, and why are you the person to build it (2 minutes max)
                 </label>
                 <input id="video1" name="video1" type="url" required placeholder="https://loom.com/share/..." className={inputClass} />
               </div>
@@ -95,7 +95,7 @@ export default function Apply() {
               {/* Video 2 */}
               <div>
                 <label className={labelClass} htmlFor="video2">
-                  video 2 — &ldquo;what do you like and dislike about elon musk — be specific and honest — 90 seconds max&rdquo;
+                  video 2: what do you like and dislike about elon musk, be specific and honest (90 seconds max)
                 </label>
                 <input id="video2" name="video2" type="url" required placeholder="https://loom.com/share/..." className={inputClass} />
               </div>
@@ -103,7 +103,7 @@ export default function Apply() {
               {/* Video 3 */}
               <div>
                 <label className={labelClass} htmlFor="video3">
-                  video 3 — &ldquo;what would you do with $15,000 and one semester of focused time — 90 seconds max&rdquo;
+                  video 3: what would you do with $15,000 and one semester of focused time (90 seconds max)
                 </label>
                 <input id="video3" name="video3" type="url" required placeholder="https://loom.com/share/..." className={inputClass} />
               </div>
