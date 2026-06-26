@@ -15,7 +15,7 @@ export default function Apply() {
         <div className="mb-10">
           <h1 className="text-3xl font-light text-[#000000] mb-6">apply</h1>
           <p className="text-[#000000] text-base leading-relaxed mb-4">
-            Applications are reviewed on a rolling basis. The deadline is August 31st. All decisions are sent by September 4th.
+            Applications are reviewed on a rolling basis. The deadline is August 31, 2026. All decisions are sent by September 4, 2026.
           </p>
           <p className="text-[#000000] text-base leading-relaxed">
             We accept video applications only, recorded on Loom.

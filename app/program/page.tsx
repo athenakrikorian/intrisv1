@@ -14,7 +14,7 @@ export default function Program() {
           </p>
 
           <p className="text-[#000000] text-base md:text-lg leading-relaxed">
-            The program runs September 1 to December 31.
+            The program runs September 1, 2026 to December 31, 2026.
           </p>
         </div>
       </div>
