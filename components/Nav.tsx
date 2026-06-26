@@ -10,7 +10,7 @@ export default function Nav() {
   ]
   return (
     <nav className="sticky top-0 z-50 bg-white/30 backdrop-blur-md border-b border-white/30">
-      <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="w-full px-4 h-16 flex items-center justify-between">
         <Link href="/" aria-label="intris home">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <line x1="4" y1="28" x2="26" y2="6" stroke="#000000" strokeWidth="2" strokeLinecap="round"/>
