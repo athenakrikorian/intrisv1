@@ -7,6 +7,34 @@ const labelClass = 'block text-xs text-[#000000]/70 mb-2'
 
 export default function Apply() {
   const [teamSize, setTeamSize] = useState('solo')
+  const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    setLoading(true)
+    setError('')
+    try {
+      const res = await fetch('https://formspree.io/f/mqevpbrv', {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: new FormData(e.currentTarget),
+      })
+      if (res.ok) {
+        setSubmitted(true)
+      } else {
+        const text = await res.text()
+        console.error('Formspree error', res.status, text)
+        setError('something went wrong. please try again or email info@intris.com directly.')
+      }
+    } catch (err) {
+      console.error('Formspree fetch failed', err)
+      setError('network error. please check your connection and try again.')
+    } finally {
+      setLoading(false)
+    }
+  }
 
   return (
     <main className="min-h-[calc(100vh-4rem)] py-20 px-6">
@@ -24,7 +52,14 @@ export default function Apply() {
 
         {/* Form card */}
         <div className="bg-white/50 backdrop-blur-md rounded-3xl border border-white/40 p-8 md:p-12">
-            <form action="https://formspree.io/f/mqevpbrv" method="POST" className="space-y-8">
+          {submitted ? (
+            <div className="py-16 text-center">
+              <p className="text-[#000000] text-lg font-light leading-relaxed">
+                thank you, your application has been received.
+              </p>
+            </div>
+          ) : (
+            <form onSubmit={handleSubmit} className="space-y-8">
               {/* Full Name */}
               <div>
                 <label className={labelClass} htmlFor="fullName">full name</label>
@@ -122,13 +157,18 @@ export default function Apply() {
               </div>
 
               {/* Submit */}
+              {error && (
+                <p className="text-sm text-red-600">{error}</p>
+              )}
               <button
                 type="submit"
-                className="w-full sm:w-auto bg-[#000000] text-white/90 px-10 py-3.5 rounded-full text-sm hover:opacity-80 transition-opacity"
+                disabled={loading}
+                className="w-full sm:w-auto bg-[#000000] text-white/90 px-10 py-3.5 rounded-full text-sm hover:opacity-80 transition-opacity disabled:opacity-50"
               >
-                submit application
+                {loading ? 'submitting...' : 'submit application'}
               </button>
             </form>
+          )}
         </div>
       </div>
     </main>
