@@ -6,7 +6,7 @@ export default function Program() {
           <h1 className="text-3xl font-light text-[#000000] mb-12">program</h1>
 
           <p className="text-[#000000] text-base md:text-lg leading-relaxed mb-6">
-            Intris deploys $15,000 into 5 founding teams each semester. The program is based in Philadelphia.
+            Intris deploys $15,000 into 6 founding teams each semester. The program is based in Philadelphia.
           </p>
 
           <p className="text-[#000000] text-base md:text-lg leading-relaxed mb-6">
