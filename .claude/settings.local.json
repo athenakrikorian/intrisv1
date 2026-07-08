@@ -13,7 +13,8 @@
       "Bash(/opt/homebrew/bin/npm run:*)",
       "Bash(PATH=\"/opt/homebrew/bin:$PATH\" npm run build)",
       "Bash(PATH=\"/opt/homebrew/bin:$PATH\" node -e \":*)",
-      "Bash(sips -z 180 180 /Users/athenakrik/intrisv1/public/apple-touch-icon.png)"
+      "Bash(sips -z 180 180 /Users/athenakrik/intrisv1/public/apple-touch-icon.png)",
+      "Bash(grep -rniE \"\\\\$15,000|cohort|5 startups|five startups|5 companies|five companies|5 founders|five founders|\\\\b5\\\\b.*team|team.*\\\\b5\\\\b\" --include=\"*.tsx\" --include=\"*.ts\" --include=\"*.jsx\" --include=\"*.js\" --include=\"*.md\" --include=\"*.mdx\" .)"
     ]
   }
 }
