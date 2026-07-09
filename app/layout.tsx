@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { DM_Sans } from 'next/font/google'
 import './globals.css'
 import Nav from '@/components/Nav'
+import { Analytics } from '@vercel/analytics/next'
 
 const dmSans = DM_Sans({ subsets: ['latin'], weight: ['300'] })
 
@@ -27,6 +28,7 @@ export default function RootLayout({
         >
           <Nav />
           {children}
+          <Analytics />
         </div>
       </body>
     </html>
