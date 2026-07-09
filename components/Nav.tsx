@@ -4,6 +4,7 @@ export default function Nav() {
   const links = [
     { href: '/program', label: 'program' },
     { href: '/apply', label: 'apply' },
+    { href: 'https://intris.substack.com', label: 'substack', external: true },
   ]
   return (
     <nav className="sticky top-0 z-50">
@@ -16,7 +17,14 @@ export default function Nav() {
         </Link>
         <div className="flex gap-6">
           {links.map(l => (
-            <Link key={l.href} href={l.href} className="text-sm text-[#000000] hover:opacity-60 transition-opacity">{l.label}</Link>
+            <Link
+              key={l.href}
+              href={l.href}
+              className="text-sm text-[#000000] hover:opacity-60 transition-opacity"
+              {...(l.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+            >
+              {l.label}
+            </Link>
           ))}
         </div>
       </div>
