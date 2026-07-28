@@ -13,7 +13,7 @@ export default function Home() {
 
       {/* Backed By */}
       <div className="pb-16 pt-8 px-6 text-center">
-        <p className="text-sm text-[#000000]/50 mb-6">backed by</p>
+        <p className="text-sm text-[#000000]/50 mb-6">partners</p>
         <div className="flex flex-wrap justify-center gap-4">
           {[...Array(5)].map((_, i) => (
             <div
