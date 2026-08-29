@@ -22,6 +22,9 @@ export default function Home() {
         <h1 className="text-[5rem] sm:text-[7rem] md:text-[9rem] font-light tracking-[-0.02em] text-[#000000] leading-none">
           <IntrisWordmark />
         </h1>
+        <p className="mt-6 mb-2 text-base sm:text-lg text-[#000000]/70 font-light tracking-wide">
+          Finding student founders and dropouts before they&rsquo;re obvious.
+        </p>
       </div>
 
       {/* Partners */}
