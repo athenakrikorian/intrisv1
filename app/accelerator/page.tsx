@@ -26,7 +26,7 @@ export default function Accelerator() {
         </p>
         <p>
           Scouting runs through the fall. The cohort is selected in
-          December.
+          January.
         </p>
         <p>
           Building something? Reach out at{' '}
