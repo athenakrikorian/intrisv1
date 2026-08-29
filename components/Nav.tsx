@@ -11,6 +11,9 @@ export default function Nav() {
           </svg>
         </Link>
         <div className="flex gap-6">
+          <Link href="/accelerator" className="text-sm text-[#000000] hover:opacity-60 transition-opacity">
+            accelerator
+          </Link>
           <Link href="https://intris.substack.com" target="_blank" rel="noopener noreferrer" className="text-sm text-[#000000] hover:opacity-60 transition-opacity">
             substack
           </Link>
