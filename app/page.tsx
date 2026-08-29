@@ -23,7 +23,7 @@ export default function Home() {
           <IntrisWordmark />
         </h1>
         <p className="mt-6 mb-2 text-base sm:text-lg text-[#000000]/70 font-light tracking-wide">
-          Finding student founders and dropouts before they&rsquo;re obvious.
+          Finding founders before they&rsquo;re obvious.
         </p>
       </div>
 
