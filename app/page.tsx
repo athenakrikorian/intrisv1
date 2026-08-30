@@ -5,9 +5,7 @@ import IntrisWordmark from '@/components/IntrisWordmark'
 const partners = [
   { file: 'elevenlabs.png',       alt: 'ElevenLabs',               href: 'https://elevenlabs.io',           blend: true  },
   { file: 'eniac.png',            alt: 'Eniac Ventures',           href: 'https://eniac.vc',                blend: true  },
-  { file: 'index.png',            alt: 'Index Ventures',           href: 'https://indexventures.com',       blend: true  },
   { file: 'm13.png',              alt: 'M13',                      href: 'https://m13.co',                  blend: true  },
-  { file: 'nea.png',              alt: 'NEA',                      href: 'https://nea.com',                 blend: true  },
   { file: 'pareto.png',           alt: 'Pareto',                   href: 'https://www.pareto20.com/',       blend: false },
   { file: 'ribbit.png',           alt: 'Ribbit Capital',           href: 'https://ribbitcap.com',           blend: false },
   { file: 'susa.png',             alt: 'Susa Ventures',            href: 'https://susaventures.com',        blend: true  },
