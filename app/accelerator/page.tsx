@@ -19,10 +19,7 @@ export default function Accelerator() {
 
       <div className="max-w-xl w-full space-y-8 text-base leading-relaxed text-[#000000]/80">
         <p>
-          intris is a student-run accelerator at Penn. We back Penn
-          founding teams each year with $10K grants, no equity taken, plus
-          a semester of dinners, office hours, and introductions to
-          investors who actually write checks.
+          intris is a student-run accelerator at Penn.
         </p>
         <p>
           Scouting runs through the fall. The cohort is selected in
